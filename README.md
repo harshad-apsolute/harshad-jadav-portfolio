@@ -3,8 +3,9 @@
 Portfolio site for iOS roles. The page leads with the two products that take most of my time, **iFax** and **Free Text**, then the rest of the shipped apps.
 
 **Email:** [jadavharsh80@gmail.com](mailto:jadavharsh80@gmail.com)  
-**LinkedIn:** [harshad-jadav](https://www.linkedin.com/in/harshad-jadav-b759016a)  
-**GitHub:** [SmartiOSDev](https://github.com/SmartiOSDev)
+**Phone:** +91 98245 26675  
+**LinkedIn:** [jadav-harshad](https://www.linkedin.com/in/jadav-harshad-b759016a)  
+**Live page:** [harshad-apsolute.github.io/harshad-jadav-portfolio](https://harshad-apsolute.github.io/harshad-jadav-portfolio/)
 
 ## Open locally
 

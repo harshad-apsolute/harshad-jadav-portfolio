@@ -78,7 +78,7 @@ a { color: inherit; }
   padding: 72px 0;
 }
 .hero { padding-top: 56px; }
-.section, .case, #more, #progress, #skills, #contact { scroll-margin-top: 84px; }
+.section, .case, #more, #progress, #experience, #skills, #contact { scroll-margin-top: 84px; }
 .eyebrow, .kicker, .index {
   font-size: 13px;
   letter-spacing: 0.14em;
@@ -253,6 +253,35 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
 }
 .progress { flex-direction: column; }
 
+.achieve {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 8px;
+  max-width: var(--max);
+}
+.achieve li {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 14px 16px;
+}
+.achieve strong { display: block; font-size: 22px; font-weight: 500; letter-spacing: -0.03em; }
+.achieve span { color: var(--muted); font-size: 14px; }
+.job {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 18px;
+  max-width: var(--max);
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+}
+.job ul { margin: 8px 0 0; padding-left: 18px; }
+.job li { margin: 8px 0; color: #ddd6c8; }
+.job .kicker { margin-bottom: 6px; }
+
 .skill-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -285,7 +314,7 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
 }
 
 @media (max-width: 860px) {
-  .stats, .facts, .skill-grid, .grid, .progress-row { grid-template-columns: 1fr; }
+  .stats, .facts, .skill-grid, .grid, .progress-row, .achieve, .job { grid-template-columns: 1fr; }
   .case { grid-template-columns: 1fr; gap: 14px; }
   .site-header { flex-wrap: wrap; }
   .nav {
