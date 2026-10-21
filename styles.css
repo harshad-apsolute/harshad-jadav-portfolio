@@ -11,6 +11,7 @@
   --shadow: 0 14px 34px rgba(59, 110, 165, 0.1);
   --grad: linear-gradient(135deg, #3b6ea5 0%, #5b8bb8 100%);
   --serif: "Instrument Serif", Georgia, serif;
+  --display: "Playfair Display", "Instrument Serif", Georgia, serif;
   --sans: "Outfit", "Avenir Next", sans-serif;
   --max: 1080px;
   --icon: none;
@@ -102,17 +103,25 @@ a { color: inherit; }
   font-weight: 600;
 }
 h1 {
-  font-family: var(--serif);
-  font-weight: 400;
-  font-size: clamp(56px, 8vw, 92px);
-  line-height: 0.92;
-  margin: 0 0 22px;
-  letter-spacing: -0.03em;
-  background: var(--grad);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(52px, 7.2vw, 84px);
+  line-height: 1.4;
+  margin: 0 0 14px;
+  letter-spacing: -0.02em;
+  overflow: visible;
+  color: var(--accent);
+}
+.name-grad {
+  display: inline-block;
+  padding: 0.1em 0.04em 0.28em;
+  line-height: 1.4;
+  color: var(--accent);
+  -webkit-text-fill-color: currentColor;
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  overflow: visible;
 }
 h2 {
   font-family: var(--serif);
@@ -165,7 +174,7 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
   align-items: center;
   gap: 8px;
   margin: 22px 0 0;
-  padding: 10px 14px;
+  padding: 11px 16px 13px;
   max-width: 100%;
   background: white;
   border: 1px solid var(--line);
@@ -173,20 +182,25 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
   color: var(--accent);
   font-size: 14px;
   font-weight: 600;
+  line-height: 1.35;
+  overflow: visible;
   box-shadow: 0 8px 18px rgba(59, 110, 165, 0.08);
 }
 
 .btn {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   text-decoration: none;
   background: var(--grad);
   color: white;
   border-radius: 999px;
-  padding: 12px 18px;
+  padding: 15px 18px 17px;
   font-size: 15px;
   font-weight: 600;
+  line-height: 1.5;
   border: 0;
+  overflow: visible;
   box-shadow: 0 8px 18px rgba(59, 110, 165, 0.22);
 }
 .btn:hover { filter: brightness(1.05); }
@@ -196,7 +210,7 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
   border: 1px solid var(--line);
   box-shadow: none;
 }
-.btn-small { padding: 8px 14px; font-size: 14px; }
+.btn-small { padding: 9px 14px 11px; font-size: 14px; line-height: 1.35; }
 
 .stats {
   display: grid;
@@ -449,7 +463,8 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
   .site-header .btn-small { display: none; }
   .hero, .section, .site-footer { width: min(var(--max), calc(100% - 32px)); }
   .site-header { padding-left: 16px; padding-right: 16px; }
-  h1 { font-size: 56px; }
+  h1 { font-size: 50px; line-height: 1.4; }
+  .name-grad { padding-bottom: 0.32em; }
 }
 
 @media (prefers-reduced-motion: reduce) {
