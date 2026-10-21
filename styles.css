@@ -159,6 +159,22 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
 }
 .lede a { color: var(--accent); font-weight: 600; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.open-cities {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 22px 0 0;
+  padding: 10px 14px;
+  max-width: 100%;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(59, 110, 165, 0.08);
+}
 
 .btn {
   display: inline-flex;
