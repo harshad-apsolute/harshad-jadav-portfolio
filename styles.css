@@ -1,15 +1,15 @@
 :root {
-  --bg: #f5f7fb;
+  --bg: #f4f7fa;
   --bg-2: #ffffff;
   --card: #ffffff;
-  --line: rgba(37, 99, 235, 0.14);
-  --text: #152033;
-  --muted: #5b677a;
-  --accent: #2563eb;
-  --accent-2: #7c3aed;
+  --line: rgba(59, 110, 165, 0.16);
+  --text: #1c2a3a;
+  --muted: #5d6b7a;
+  --accent: #3b6ea5;
+  --accent-2: #5b8bb8;
   --accent-ink: #ffffff;
-  --shadow: 0 14px 34px rgba(37, 99, 235, 0.1);
-  --grad: linear-gradient(135deg, #2563eb 0%, #7c3aed 55%, #f97316 100%);
+  --shadow: 0 14px 34px rgba(59, 110, 165, 0.1);
+  --grad: linear-gradient(135deg, #3b6ea5 0%, #5b8bb8 100%);
   --serif: "Instrument Serif", Georgia, serif;
   --sans: "Outfit", "Avenir Next", sans-serif;
   --max: 1080px;
@@ -21,9 +21,9 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   background:
-    radial-gradient(720px 360px at 8% -8%, rgba(37, 99, 235, 0.18), transparent 60%),
-    radial-gradient(640px 320px at 100% 0%, rgba(249, 115, 22, 0.16), transparent 55%),
-    radial-gradient(520px 280px at 70% 18%, rgba(124, 58, 237, 0.1), transparent 60%),
+    radial-gradient(720px 360px at 8% -8%, rgba(59, 110, 165, 0.14), transparent 60%),
+    radial-gradient(640px 320px at 100% 0%, rgba(91, 139, 184, 0.12), transparent 55%),
+    radial-gradient(520px 280px at 70% 18%, rgba(59, 110, 165, 0.08), transparent 60%),
     var(--bg);
   color: var(--text);
   font-family: var(--sans);
@@ -72,7 +72,7 @@ a { color: inherit; }
   font-size: 18px;
   letter-spacing: 0.02em;
   text-decoration: none;
-  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.28);
+  box-shadow: 0 8px 18px rgba(59, 110, 165, 0.24);
 }
 .nav { display: flex; gap: 18px; margin-left: auto; }
 .nav a {
@@ -134,7 +134,7 @@ h2[data-icon]::before, h3[data-icon]::before {
   flex: none;
   border-radius: 14px;
   background: var(--icon) center / 22px 22px no-repeat, var(--grad);
-  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.22);
+  box-shadow: 0 8px 16px rgba(59, 110, 165, 0.2);
 }
 h3[data-icon]::before { width: 36px; height: 36px; border-radius: 12px; background-size: 18px 18px, auto; }
 h2[data-icon="work"] { --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' stroke='white' stroke-width='2' viewBox='0 0 24 24'%3E%3Crect x='3' y='7' width='18' height='13' rx='2'/%3E%3Cpath d='M8 7V5h8v2'/%3E%3C/svg%3E"); }
@@ -171,7 +171,7 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
   font-size: 15px;
   font-weight: 600;
   border: 0;
-  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+  box-shadow: 0 8px 18px rgba(59, 110, 165, 0.22);
 }
 .btn:hover { filter: brightness(1.05); }
 .btn-ghost {
@@ -268,13 +268,13 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
   border-radius: 14px;
   padding: 12px 14px;
 }
-.facts strong { display: block; font-size: 22px; font-weight: 600; letter-spacing: -0.03em; color: #1d4ed8; }
+.facts strong { display: block; font-size: 22px; font-weight: 600; letter-spacing: -0.03em; color: #3b6ea5; }
 .facts span, .scope, .meta { color: var(--muted); font-size: 14px; }
 .scope { margin-top: 0; }
 .text-link {
   color: var(--accent);
   text-decoration: none;
-  border-bottom: 1px solid rgba(37, 99, 235, 0.35);
+  border-bottom: 1px solid rgba(59, 110, 165, 0.35);
   font-size: 15px;
   font-weight: 600;
 }
@@ -294,12 +294,12 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
   border: 1px solid var(--line);
   border-radius: 18px;
   padding: 16px;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.06);
+  box-shadow: 0 8px 20px rgba(59, 110, 165, 0.06);
   transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
 }
 .card:hover, .progress:hover {
   transform: translateY(-3px);
-  border-color: rgba(37, 99, 235, 0.35);
+  border-color: rgba(59, 110, 165, 0.35);
   box-shadow: var(--shadow);
 }
 .card img {
@@ -338,7 +338,7 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
   border: 1px solid var(--line);
   border-radius: 16px;
   padding: 16px;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.06);
+  box-shadow: 0 8px 20px rgba(59, 110, 165, 0.06);
 }
 .achieve strong {
   display: block;
@@ -380,7 +380,7 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
   border: 1px solid var(--line);
   border-radius: 18px;
   padding: 18px;
-  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.06);
+  box-shadow: 0 8px 20px rgba(59, 110, 165, 0.06);
 }
 .skill-grid h3 { font-size: 16px; color: var(--text); font-weight: 600; margin-bottom: 10px; }
 .skill-grid p { margin: 0; color: #334155; }
