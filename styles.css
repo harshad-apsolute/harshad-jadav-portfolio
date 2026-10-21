@@ -78,7 +78,7 @@ a { color: inherit; }
   padding: 72px 0;
 }
 .hero { padding-top: 56px; }
-.section, .case, #more, #progress, #experience, #skills, #contact { scroll-margin-top: 84px; }
+.section, .case, #most, #more, #progress, #experience, #skills, #contact { scroll-margin-top: 84px; }
 .eyebrow, .kicker, .index {
   font-size: 13px;
   letter-spacing: 0.14em;
@@ -242,6 +242,7 @@ h3 { margin: 0 0 6px; font-size: 22px; font-weight: 500; }
 .card p, .progress p { margin: 0; color: var(--muted); font-size: 15px; }
 .card h3, .progress h3 { font-size: 18px; }
 .meta { margin-top: 6px !important; }
+.store-row { display: flex; flex-wrap: wrap; gap: 14px; margin: 10px 0 0 !important; }
 .android-note { color: var(--muted); max-width: var(--max); }
 .android-note a { color: var(--accent); }
 
